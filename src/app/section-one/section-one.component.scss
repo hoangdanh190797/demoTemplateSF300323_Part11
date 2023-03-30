@@ -1,0 +1,134 @@
+@import "../styles/styles.scss";
+
+.sectionOne_ {
+  .content_sectionOne_left {
+    img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+  }
+  .content_sectionOne_right {
+    h4 {
+      color: $orangeM;
+      font-size: larger;
+    }
+    p {
+      color: $darkgrayishblue;
+      text-decoration: solid;
+    }
+  }
+  @include Responsive(XL) {
+    display: flex;
+    .content_sectionOne_left {
+      width: 50%;
+      margin: 40px;
+    }
+    .content_sectionOne_right {
+      width: 50%;
+      margin: 40px;
+      h1 {
+        font-size: 60px;
+      }
+      p {
+        font-size: x-large;
+      }
+      .product_price {
+        display: flex;
+        justify-content: space-between;
+        .cts {
+          display: flex;
+          h3 {
+            padding-top: 5px;
+            span {
+              color: $orangeM;
+              margin-left: 15px;
+            }
+          }
+        }
+        .cts_price {
+          font-size: 20px;
+          margin-top: 20px;
+          text-decoration-line: line-through;
+        }
+      }
+    }
+    .ctsAddtc {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      .product_count {
+        width: 30%;
+        font-size: xx-large;
+        button {
+          margin: 10px 20px 0px 20px;
+        }
+      }
+      .product_addtocart {
+        margin-top: 10px;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        button {
+          height: 50px;
+          width: 75%;
+          background-color: $orangeM;
+          border-radius: 0.5rem;
+          span {
+            font-size: larger;
+            margin-left: 10px;
+            color: $paleorange;
+          }
+        }
+      }
+    }
+  }
+  @include Responsive(XS) {
+    display: flex;
+    flex-direction: column;
+    .content_sectionOne_left {
+      width: 100%;
+      margin: 0px;
+    }
+    .content_sectionOne_right {
+      width: 100%;
+      margin: 0px;
+      h1 {
+        font-size: 35px;
+      }
+      p {
+        font-size: large;
+      }
+      .product_price {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    .ctsAddtc {
+      display: flex;
+      flex-direction: column;
+      .product_count {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+      .product_addtocart {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        button {
+          height: 50px;
+          width: 75%;
+          background-color: $orangeM;
+          border-radius: 0.5rem;
+          span {
+            font-size: larger;
+            margin-left: 10px;
+            color: $paleorange;
+          }
+        }
+      }
+    }
+  }
+}

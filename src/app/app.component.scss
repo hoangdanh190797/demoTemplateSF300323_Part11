@@ -1,0 +1,9 @@
+@import '../app/styles/helpers/mixins';
+#main{
+    @include Responsive(XL){
+        padding: 0px 80px;
+    }
+    @include Responsive(XS){
+        padding: 0px 0px;
+    }
+}
